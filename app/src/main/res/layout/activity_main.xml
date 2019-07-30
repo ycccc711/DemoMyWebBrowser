@@ -7,6 +7,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
+    <EditText
+        android:id="@+id/etURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="URL" />
+
     <WebView
         android:id="@+id/webViewMyPage"
         android:layout_width="match_parent"
