@@ -22,11 +22,18 @@ public class MainActivity extends AppCompatActivity {
 
         wvMyPage.setWebViewClient(new WebViewClient());
 
+
+
         btnLoadURL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String url = "https://www.facebook.com/";
                 wvMyPage.loadUrl(url);
+                wvMyPage.getSettings().setAllowFileAccess(false);
+                wvMyPage.getSettings().setJavaScriptEnabled(true);
+                wvMyPage.getSettings().setBuiltInZoomControls(true);
+
+
             }
         });
     }
